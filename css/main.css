@@ -6,7 +6,7 @@
 
 body {
   background-color: rgba(53, 51, 51, 0.281);
-  background: url(/dist/img/godismoving1.jpg) no-repeat center/cover;
+  background: url(/img/godismoving1.jpg) no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
