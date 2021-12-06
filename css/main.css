@@ -5,7 +5,7 @@
 
 body {
   background-color: rgba(53, 51, 51, 0.281);
-  background: url(/dist/img/godismoving1.jpg) no-repeat center/cover;
+  background: url(/img/godismoving1.jpg) no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +124,7 @@ body {
 
 #mainshow::before {
   content: "";
-  background: url(/dist/img/gm4.jpg) no-repeat repeat center center/cover;
+  background: url(/img/gm4.jpg) no-repeat repeat center center/cover;
   position: absolute;
   top: 10px;
   left: 0;
@@ -141,7 +141,7 @@ body {
 
 #mainshow2::before {
   content: "";
-  background: url(/dist/img/gm3.jpg) no-repeat repeat center center/cover;
+  background: url(/img/gm3.jpg) no-repeat repeat center center/cover;
   position: absolute;
   top: 10px;
   left: 0;
@@ -158,7 +158,7 @@ body {
 
 #mainshow3::before {
   content: "";
-  background: url(/dist/img/gm2.jpg) no-repeat repeat center center/cover;
+  background: url(/img/gm2.jpg) no-repeat repeat center center/cover;
   position: absolute;
   top: 10px;
   left: 0;
@@ -229,7 +229,7 @@ body {
 
 /*=======================================ABOUT==========================================*/
 #about {
-  background: url(/dist/img/sec3.jpg) no-repeat center/cover;
+  background: url(/img/sec3.jpg) no-repeat center/cover;
   color: white;
   font-size: 2rem;
   font-weight: bold;
