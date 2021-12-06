@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+
+$primarycolor: rgba(53, 51, 51, 0.281);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primarycolor;
+  background: url(/dist/img/godismoving1.jpg) no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#text {
+  font-size: 120px;
+  position: absolute;
+  top: 100px;
+}
+
+.homebutton {
+  border: 2px solid black;
+  position: relative;
+  right: 49px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  max-width: 200vh;
+}
+
+/* Grow Text */
+.grow {
+  transition: all 0.2 ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* ================================Nav=========================================== */
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.open-btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 3;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-black {
+  background-color: rgb(123, 194, 241);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav-black.visible {
+  transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: rgba(136, 58, 13, 0.884);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-white {
+  background-color: rgba(0, 0, 0, 0.363);
+  width: 95%;
+  height: 100%;
+  padding: 40px;
+  position: relative;
+}
+
+.nav-white.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/*================================================MAIN================================================*/
+
+#mainshow {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+#mainshow::before {
+  content: "";
+  background: url(/dist/img/gm4.jpg) no-repeat repeat center center/cover;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#mainshow2 {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+#mainshow2::before {
+  content: "";
+  background: url(/dist/img/gm3.jpg) no-repeat repeat center center/cover;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#mainshow3 {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+#mainshow3::before {
+  content: "";
+  background: url(/dist/img/gm2.jpg) no-repeat repeat center center/cover;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#mainshow .mainshow-container {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+#mainshow2 .mainshow-container {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+#mainshow3 .mainshow-container {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+#mainshow .mainshow-content {
+  z-index: 0;
+}
+#mainshow2 .mainshow-content {
+  z-index: 0;
+}
+#mainshow3 .mainshow-content {
+  z-index: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+.mainshow-content h1 {
+  font-size: 49px;
+}
+
+.mainshow-content p {
+  font-size: 31px;
+}
+
+.mainshow-content a {
+  font: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(59, 57, 57);
+  border-radius: 5px;
+  padding: 0.7rem;
+}
+
+.service {
+  font-size: 2rem;
+}
+
+// MAIN VIDEO //
+
+.mainvideo {
+  position: absolute;
+  margin-top: 40px;
+  left: 100px;
+}
+
+/*=======================================ABOUT==========================================*/
+
+#about {
+  background: url(/dist/img/sec3.jpg) no-repeat center/cover;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: black 1px 1px 1px;
+}
+#about2 {
+  background: linear-gradient(rgba(245, 245, 245, 0.589), gray);
+  font-size: 20px;
+}
+#about3 {
+  background: whitesmoke;
+}
+#about4 {
+  background: white;
+}
+
+.about-container {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#about2 .about-content p {
+  padding: 4px;
+  font-weight: bold;
+}
+
+/* ==============================================Media Query===================================================  */
+
+@media (max-width: 760px) {
+  #text {
+    font-size: 8vw;
+  }
+
+  .homebutton {
+    margin-top: 10px;
+    position: absolute;
+    top: 200px;
+    left: 49px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+  }
+
+  img {
+    display: none;
+  }
+
+  #about2 {
+    background: white;
+    font-size: 16px;
+  }
+}
